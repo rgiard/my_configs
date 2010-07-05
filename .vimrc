@@ -16,6 +16,7 @@ set backspace=indent,eol,start
 set nowrap
 set linebreak
 set lazyredraw
+set number
  
 set nomodeline
  
