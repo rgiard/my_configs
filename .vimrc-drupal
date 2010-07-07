@@ -37,16 +37,13 @@ set equalprg=
 " Search options
 set incsearch
 set hlsearch
- 
-if $TERM == "xterm-256color"
-  colorscheme 256_railscasts
-endif
+
+colorscheme default
 
 if has("gui_running")
   "GUI is running or is about to start.
   "Maximize gvim window.
   set lines=50 columns=100
-  colorscheme 256_railscasts
 endif
  
 let g:proj_window_width = 45
