@@ -1,6 +1,4 @@
 set nocompatible
-syntax on
-filetype plugin indent on
  
 " General appearance and behaviour
 filetype plugin indent on
@@ -53,6 +51,11 @@ set guifont=Inconsolata\ 12
 
 source /usr/share/vim/vim72/mswin.vim
 behave mswin
+
+nmap <D-[> <<
+nmap <D-]> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
 
 set backupdir=/var/vim/backup
 set directory=/var/vim/
