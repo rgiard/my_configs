@@ -36,8 +36,6 @@ set equalprg=
 set incsearch
 set hlsearch
 
-colorscheme default
-
 if has("gui_running")
   "GUI is running or is about to start.
   "Maximize gvim window.
@@ -46,8 +44,8 @@ endif
  
 let g:proj_window_width = 45
  
-set gfn=Inconsolata\ 12
-set guifont=Inconsolata\ 12
+set gfn=Inconsolata\ 11
+set guifont=Inconsolata\ 11
 
 source /usr/share/vim/vim72/mswin.vim
 behave mswin
@@ -59,3 +57,16 @@ vmap <D-]> >gv
 
 set backupdir=/var/vim/backup
 set directory=/var/vim/
+
+colorscheme mayansmoke
+
+" DRUPAL SETTINGS
+if has("autocmd")
+  augroup module
+    autocmd BufRead,BufNewFile *.module set filetype=php
+    autocmd BufRead,BufNewFile *.install set filetype=php
+    autocmd BufRead,BufNewFile *.test set filetype=php
+  augroup END
+endif
+
+syntax on
