@@ -36,10 +36,10 @@ set equalprg=
 set incsearch
 set hlsearch
 
+set lines=50 columns=100
 if has("gui_running")
-  "GUI is running or is about to start.
   "Maximize gvim window.
-  set lines=50 columns=100
+  set lines=999 columns=999
 endif
  
 let g:proj_window_width = 45
