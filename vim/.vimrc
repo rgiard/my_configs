@@ -42,7 +42,7 @@ if has("gui_running")
   set lines=999 columns=999
 endif
  
-let g:proj_window_width = 45
+let g:NERDTreeWinSize=50
  
 set gfn=Inconsolata\ 11
 set guifont=Inconsolata\ 11
